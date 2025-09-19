@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Materi - Kursus Web Programming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">Web<span>Course</span></a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="course.html" class="header__nav-link active">Course</a></li>
+                    <li class="header__nav-item"><a href="dashboard.html" class="header__nav-link">Dashboard</a></li>
+                    <li class="header__nav-item"><a href="forum.html" class="header__nav-link">Forum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Daftar Materi Web Programming</h1>
+
+                <nav class="course-nav">
+                    <h3 class="course-nav__title">Navigasi Cepat:</h3>
+                    <ul>
+                        <li><a href="#bab-1" class="btn btn--secondary">Bab 1: HTML Dasar</a></li>
+                        <li><a href="#bab-2" class="btn btn--secondary">Bab 2: CSS Dasar</a></li>
+                        <li><a href="#bab-3" class="btn btn--secondary">Bab 3: CSS Layout</a></li>
+                    </ul>
+                </nav>
+
+                <article class="chapter" id="bab-1">
+                    <h2 class="chapter__title">Bab 1: Pengenalan HTML</h2>
+                    <p>Di bab ini, kita akan mempelajari fondasi dari setiap halaman web, yaitu HTML. Anda akan belajar
+                        cara menstrukturkan konten.</p>
+                    <ul>
+                        <li>Struktur dasar dokumen HTML5</li>
+                        <li>Elemen heading, paragraf, dan list</li>
+                        <li>Menambahkan gambar dan link</li>
+                        <li>Penggunaan tag semantik: `&lt;header&gt;`, `&lt;main&gt;`, `&lt;footer&gt;`</li>
+                    </ul>
+                    <h4>Contoh Kode: Struktur Dasar</h4>
+                    <div class="code-snippet">
+                        <button class="code-snippet__copy-btn">Salin</button>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </article>
+
+                <article class="chapter" id="bab-2">
+                    <h2 class="chapter__title">Bab 2: Styling dengan CSS</h2>
+                    <p>Setelah membuat struktur, saatnya mempercantik halaman dengan CSS. Kita akan membahas selector,
+                        properti warna, font, dan box model.</p>
+                    <ul>
+                        <li>Cara kerja CSS: inline, internal, dan external</li>
+                        <li>Selector dasar (tag, class, id)</li>
+                        <li>Mengubah warna, font, dan background</li>
+                        <li>Konsep Box Model: padding, border, margin</li>
+                    </ul>
+                    <h4>Contoh Kode: Memberi Warna</h4>
+                    <div class="code-snippet">
+                        <button class="code-snippet__copy-btn">Salin</button>
+                        <pre><code>/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}</code></pre>
+                    </div>
+                    <div class="exercise-block">
+                        <h4>Latihan Statis</h4>
+                        <p><strong>Soal:</strong> Buat sebuah selector CSS untuk menargetkan semua elemen `&lt;p&gt;`
+                            yang memiliki class `highlight` dan ubah warnanya menjadi biru.</p>
+                        <p><strong>Jawaban:</strong> `p.highlight { color: blue; }`</p>
+                    </div>
+                </article>
+
+                <article class="chapter" id="bab-3">
+                    <h2 class="chapter__title">Bab 3: CSS Layout Modern</h2>
+                    <p>Bab ini fokus pada teknik layouting yang esensial untuk membuat website responsif, yaitu Flexbox
+                        dan CSS Grid.</p>
+                    <ul>
+                        <li>Pengenalan Flexbox untuk layout satu dimensi</li>
+                        <li>Properti Flexbox: `display`, `flex-direction`, `justify-content`</li>
+                        <li>Pengenalan CSS Grid untuk layout dua dimensi</li>
+                        <li>Membuat grid responsif dengan `fr` unit dan `repeat()`</li>
+                    </ul>
+                    <h4>Contoh Kode: Layout Flexbox</h4>
+                    <div class="code-snippet">
+                        <button class="code-snippet__copy-btn">Salin</button>
+                        <pre><code>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}</code></pre>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2025 WebCourse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

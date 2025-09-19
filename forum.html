@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Diskusi - Kursus Web Programming</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">MP<span>Course</span></a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="course.html" class="header__nav-link">Course</a></li>
+                    <li class="header__nav-item"><a href="dashboard.html" class="header__nav-link">Dashboard</a></li>
+                    <li class="header__nav-item"><a href="forum.html" class="header__nav-link active">Forum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Forum Diskusi</h1>
+
+                <div class="card" style="margin-bottom: 40px;">
+                    <h3>Buat Thread Baru</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="thread-title">Judul Topik</label>
+                            <input type="text" id="thread-title" class="form-control"
+                                placeholder="Contoh: Bagaimana cara centering div?">
+                        </div>
+                        <div class="form-group">
+                            <label for="thread-content">Isi Pesan</label>
+                            <textarea id="thread-content" class="form-control" rows="5"
+                                placeholder="Tulis pertanyaan Anda di sini..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Posting Thread</button>
+                    </form>
+                </div>
+
+                <div class="threads-list">
+                    <article class="forum-thread">
+                        <h2 class="forum-thread__title"><a href="#">Error saat menggunakan Flexbox di IE11</a></h2>
+                        <p class="forum-thread__meta">oleh <strong>Citra</strong> pada 14 September 2025</p>
+                        <div class="comment">
+                            <p class="comment__author">Budi:</p>
+                            <p>Coba tambahkan prefix `-ms-` untuk properti flexbox-nya, Kak. Biasanya itu membantu untuk
+                                browser Internet Explorer.</p>
+                        </div>
+                    </article>
+
+                    <article class="forum-thread">
+                        <h2 class="forum-thread__title"><a href="#">Rekomendasi Font Keren untuk Website Portofolio</a>
+                        </h2>
+                        <p class="forum-thread__meta">oleh <strong>Budi</strong> pada 13 September 2025</p>
+                        <div class="comment">
+                            <p class="comment__author">Alia:</p>
+                            <p>Saya suka pakai 'Poppins' atau 'Inter' dari Google Fonts. Keduanya sangat bersih dan
+                                modern.</p>
+                        </div>
+                        <div class="comment">
+                            <p class="comment__author">Admin:</p>
+                            <p>Setuju! Font 'Inter' adalah yang kami gunakan di website ini.</p>
+                        </div>
+                    </article>
+
+                    <article class="forum-thread">
+                        <h2 class="forum-thread__title"><a href="#">Perbedaan antara &lt;section&gt; dan
+                                &lt;article&gt;?</a></h2>
+                        <p class="forum-thread__meta">oleh <strong>Alia</strong> pada 12 September 2025</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2025 MPCourse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

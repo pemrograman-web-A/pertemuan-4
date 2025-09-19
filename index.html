@@ -1,14 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tes</title>
+    <meta name="description"
+        content="Kursus Web Programming online untuk pemula. Belajar HTML, CSS, JavaScript, dan PHP dari nol.">
+    <title>Homepage - Kursus Web Programming</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 
 <body>
-    tesss
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">MP<span>Course</span></a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link active">Home</a></li>
+                    <li class="header__nav-item"><a href="course.html" class="header__nav-link">Course</a></li>
+                    <li class="header__nav-item"><a href="dashboard.html" class="header__nav-link">Dashboard</a></li>
+                    <li class="header__nav-item"><a href="forum.html" class="header__nav-link">Forum</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="#" class="btn btn--secondary">Login</a>
+                <a href="#" class="btn btn--primary">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Mulai Dari Nol → Kuasai Web Programming: HTML & CSS untuk Pemula</h1>
+                    <p class="hero__subtitle">Materi terstruktur, contoh kode nyata, dan latihan praktis — bangun
+                        portofolio pertamamu.</p>
+                    <div class="hero__cta">
+                        <a href="#" class="btn btn--primary">Daftar Sekarang</a>
+                        <a href="course.html" class="btn btn--secondary">Lihat Daftar Materi</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="images/programming-background-with-person-working-with-codes-computer.jpg"
+                        alt="Ilustrasi seseorang sedang melakukan coding">
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary">
+                    <p><strong>Durasi:</strong> 30 jam • <strong>Level:</strong> Pemula → Menengah •
+                        <strong>Sertifikat:</strong> Ya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="topics" class="section">
+            <div class="container">
+                <h2 class="section-title">Topik Utama yang Dipelajari</h2>
+                <div class="grid topics__grid">
+                    <article class="card topic-card">
+                        <div class="topic-card__icon">💻</div>
+                        <h3 class="topic-card__title">HTML5</h3>
+                        <p>Belajar struktur dasar halaman web dan elemen-elemen semantik untuk membangun konten yang
+                        kokoh.</p>
+                        <p><a href="https://www.w3schools.com/html/default.asp">View More</a></p>
+                    </article>
+                    <article class="card topic-card">
+                        <a href=""></a>
+                        <div class="topic-card__icon">🎨</div>
+                        <h3 class="topic-card__title">CSS3</h3>
+                        <p> Mendesain layout yang responsif dan menarik secara visual menggunakan Flexbox, Grid, dan
+                            animasi.</p>
+                    </article>
+                    <article class="card topic-card">
+                        <div class="topic-card__icon">⚙️</div>
+                        <h3 class="topic-card__title">JavaScript</h3>
+                        <p>Menambahkan interaktivitas dan logika pada website Anda untuk pengalaman pengguna yang
+                            dinamis.</p>
+                    </article>
+                    <article class="card topic-card">
+                        <div class="topic-card__icon">🐘</div>
+                        <h3 class="topic-card__title">PHP</h3>
+                        <p>Memahami dasar-dasar backend untuk memproses form dan berinteraksi dengan database.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section" style="background-color: var(--light-gray-color);">
+            <div class="container">
+                <h2 class="section-title">Apa Kata Mereka?</h2>
+                <div class="grid testimonials__grid">
+                    <article class="card testimonial-card">
+                        <p>"Belajar mudah, materi rapi, cocok banget buat pemula! Instrukturnya menjelaskan dengan
+                            sangat jelas."</p>
+                        <footer class="testimonial-card__author">Alia, Mahasiswa IT</footer>
+                    </article>
+                    <article class="card testimonial-card">
+                        <p>"Dari sama sekali tidak bisa coding, sekarang saya sudah bisa membuat landing page sendiri.
+                            Terima kasih WebCourse!"</p>
+                        <footer class="testimonial-card__author">Budi, Freelancer</footer>
+                    </article>
+                    <article class="card testimonial-card">
+                        <p>"Materi CSS Grid dan Flexbox-nya adalah yang terbaik. Sangat membantu pekerjaan saya sebagai
+                            desainer."</p>
+                        <footer class="testimonial-card__author">Citra, UI/UX Designer</footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__links">
+                <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
+            </div>
+            <p class="footer__copyright">&copy; 2025 MPCourse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

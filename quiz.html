@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: HTML Dasar - Kursus Web Programming</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">MP<span>Course</span></a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
+                    <li class="header__nav-item"><a href="course.html" class="header__nav-link">Course</a></li>
+                    <li class="header__nav-item"><a href="dashboard.html" class="header__nav-link">Dashboard</a></li>
+                    <li class="header__nav-item"><a href="forum.html" class="header__nav-link">Forum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Quiz: HTML Dasar</h1>
+                <div class="card">
+                    <p><strong>Petunjuk:</strong> Pilih jawaban yang paling tepat. Untuk soal coding, tulis jawaban Anda
+                        di textarea. Setelah selesai, mohon <strong>screenshot</strong> jawaban Anda dan kirimkan ke
+                        instruktur.</p>
+                    <hr style="margin: 20px 0;">
+                    <form action="#" method="POST">
+                        <div class="quiz-question">
+                            <p><strong>1. Apa kepanjangan dari HTML?</strong></p>
+                            <div class="quiz-question__options">
+                                <label><input type="radio" name="q1" value="a"> HyperText Markup Language</label>
+                                <label><input type="radio" name="q1" value="b"> HighText Machine Language</label>
+                                <label><input type="radio" name="q1" value="c"> Hyperlink and Text Markup
+                                    Language</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>2. Tag manakah yang digunakan untuk membuat paragraf?</strong></p>
+                            <div class="quiz-question__options">
+                                <label><input type="radio" name="q2" value="a"> &lt;h1&gt;</label>
+                                <label><input type="radio" name="q2" value="b"> &lt;p&gt;</label>
+                                <label><input type="radio" name="q2" value="c"> &lt;br&gt;</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>3. Atribut manakah yang digunakan untuk menambahkan link ke suatu
+                                    halaman?</strong></p>
+                            <div class="quiz-question__options">
+                                <label><input type="radio" name="q3" value="a"> src</label>
+                                <label><input type="radio" name="q3" value="b"> link</label>
+                                <label><input type="radio" name="q3" value="c"> href</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>4. Tag semantik mana yang paling tepat untuk bagian konten utama
+                                    halaman?</strong></p>
+                            <div class="quiz-question__options">
+                                <label><input type="radio" name="q4" value="a"> &lt;div id="main"&gt;</label>
+                                <label><input type="radio" name="q4" value="b"> &lt;main&gt;</label>
+                                <label><input type="radio" name="q4" value="c"> &lt;section&gt;</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>5. Elemen manakah yang merupakan "empty element"?</strong></p>
+                            <div class="quiz-question__options">
+                                <label><input type="radio" name="q5" value="a"> &lt;p&gt;</label>
+                                <label><input type="radio" name="q5" value="b"> &lt;img&gt;</label>
+                                <label><input type="radio" name="q5" value="c"> &lt;div&gt;</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>6. Buatlah sebuah struktur HTML untuk menampilkan gambar `logo.png` yang juga
+                                    berfungsi sebagai link ke `index.html`.</strong></p>
+                            <textarea class="form-control" rows="6"
+                                placeholder="Tulis kode HTML Anda di sini..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--disabled">Kumpul Jawaban
+                            (Non-fungsional)</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2025 MPCourse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
